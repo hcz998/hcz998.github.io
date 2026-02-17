@@ -1,0 +1,417 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>结草社 | 节操社 | Jiecaoshe.com</title>
+<link rel="shortcut icon" href="https://www.jiecaoshe.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://www.jiecaoshe.com/media/css/tailwind.css">
+<link rel="stylesheet" href="https://www.jiecaoshe.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="结草社 | 节操社 | Jiecaoshe.com - Atom Feed" href="https://www.jiecaoshe.com/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQD2NQPG6E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-NQD2NQPG6E');
+  </script>
+    
+
+  <meta name="description" content="我是黑长直赛高，感谢你来看我。" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/friends" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        友链
+      </a>
+    
+      <a href="/aboutme" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://www.jiecaoshe.com/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+
+    <div class="max-w-4xl w-full mx-auto ">
+      
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      结草社 | 节操社 | Jiecaoshe.com
+    </div>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      我是黑长直赛高，感谢你来看我。
+    </div>
+    
+      <div class="mt-8 text-center md:text-left">
+        <a
+          href="/aboutme" 
+          arget="_blank"
+          class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
+        >关于我</a>
+      </div>
+    
+    
+      <div class="mt-8 flex items-center">
+        
+        
+          
+        
+          
+            
+              <a href="mailto:mail@jiechaoshe.com" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-mail-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+            
+              <a href="https://twitter.com/hcz998/" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-twitter-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://weibo.com/2164154963/" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-weibo-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://www.zhihu.com/people/159940315" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-zhihu-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <a href="https://www.instagram.com/kuro0765/" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-instagram-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+            
+              <a href="https://qm.qq.com/cgi-bin/qm/qr?k=VH8ifQ9NSOVt87CavUblnBSb9SE9TdEk&amp;noverify=0&amp;personal_qrcode_source=4" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-qq-line"></i>
+              </a>
+            
+          
+        
+      </div>
+    
+  </div>
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://www.jiecaoshe.com/images/avatar.png?v=1771344578755" alt="结草社 | 节操社 | Jiecaoshe.com" width="100%" height="100%">
+  </div>
+</header>
+      
+
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/v2K6My-Wz1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2026丙午马年春节快乐
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2026-02-17</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p><img src="https://www.jiecaoshe.com/post-images/1771305784435.jpg" alt="" loading="lazy"><br>
+【Pixiv # 141290076】<br>
+2026丙午马年春节快乐<br>
+祝大家春节愉快，阖家欢乐！</p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/v2K6My-Wz1/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/gVcsGTjupb/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2026新年快乐
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2026-01-01</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p><img src="https://www.jiecaoshe.com/post-images/1767283947419.jpg" alt="" loading="lazy"><br>
+【Pixiv # 139393919】</p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/gVcsGTjupb/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/R0Oq0x4kwz/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Cloudflare 发生故障
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2025-11-19</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        北京时间2025年11月18日19点 Cloudflare 突发故障，全球众多网站无法访问。
+北京时间2025年11月18日22点42分 Cloudflare 称已实施修复措施，认为此事件现已解决。
+本站也使用了cf加速受到影响 ( &gt...
+      </div>
+      <a href="https://www.jiecaoshe.com/R0Oq0x4kwz/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://www.jiecaoshe.com/post-images/R0Oq0x4kwz.png" alt="Cloudflare 发生故障">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/SqgNgkZ2mh/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2025乙巳蛇年春节快乐
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2025-01-29</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p><img src="https://hcz998.github.io/post-images/1738064498514.png" alt="" loading="lazy"><br>
+【Pixiv # 125754755】<br>
+2025乙巳蛇年春节快乐<br>
+祝大家年年有余</p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/SqgNgkZ2mh/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://www.jiecaoshe.com/post-images/SqgNgkZ2mh.jpg" alt="2025乙巳蛇年春节快乐">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/4VWy-790kC/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2025新年快乐
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-12-31</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p><img src="https://hcz998.github.io/post-images/1735660185873.png" alt="" loading="lazy"><br>
+【Pixiv # 125755617】</p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/4VWy-790kC/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://www.jiecaoshe.com/post-images/4VWy-790kC.jpg" alt="2025新年快乐">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/oRm_pSQnY/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          凑阿库娅宣布8.28毕业
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-08-12</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p><a href="https://link.jiecaoshe.com/go.html?url=https://www.bilibili.com/video/BV1zwakesETs/" target="_blank">【全熟/粉丝精翻】湊あくあ8.28毕业的重要告知</a></p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/oRm_pSQnY/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://www.jiecaoshe.com/post-images/oRm_pSQnY.jpg" alt="凑阿库娅宣布8.28毕业">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/sbXNQiDI-/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          蒙古上单四周年纪念
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-05-04</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        蒙古上单四周年纪念
+
+
+四周年再放送
+...
+      </div>
+      <a href="https://www.jiecaoshe.com/sbXNQiDI-/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/sKQKL-Led/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          今天是Miku Day
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-03-09</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>3月9日是Miku Day（ミクの日）<br>
+<img src="https://hcz998.github.io/post-images/1710000056603.jpg" alt="" loading="lazy"><br>
+【Pixiv # 49170889】<br>
+<img src="https://hcz998.github.io/post-images/1710000110330.jpg" alt="" loading="lazy"><br>
+【Pixiv # 67671808】</p>
+<blockquote>
+<p>39：日文的读音有汉音音读、吴音音读与训读的区别。若训读“3”、吴音音读“9”，则“39”读作“み（mi）く（ku）”；若汉音音读“39”，则读作“さん（san）きゅう（kyū）”。因此，根据谐音而来的“ミクの日”就是3月9日。<br>
+当读作“miku”时，“初音ミク”的“ミク”的发音也是“Miku”，此时“39”就可以理解为“（初音）未来”；当读作“sankyū”时，发音与英语的“thank you”相似，此时“39”就可以理解为“感谢”，“39感谢祭”等均取此意；而且，将初音未来的生日8月31日中的两个数字相加，正好也是8+31=39。</p>
+</blockquote>
+<p>以上转载自<a href="https://link.jiecaoshe.com/go.html?url=https://zh.moegirl.org.cn/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5" target="_blank">萌娘百科</a></p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/sKQKL-Led/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://www.jiecaoshe.com/post-images/sKQKL-Led.jpg" alt="今天是Miku Day">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/IgwnTfTic/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          蒙古上单 2.0
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-03-08</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p><img src="https://hcz998.github.io/post-images/1709897834113.jpg" alt="" loading="lazy"><br>
+<img src="https://hcz998.github.io/post-images/1709897852993.jpg" alt="" loading="lazy"></p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/IgwnTfTic/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://www.jiecaoshe.com/FgTe1Bt7o/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2024甲辰龙年春节快乐
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-02-10</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p><img src="https://hcz998.github.io/post-images/1707495503950.jpg" alt="" loading="lazy"><br>
+【Pixiv # 115890232】</p>
+
+      </div>
+      <a href="https://www.jiecaoshe.com/FgTe1Bt7o/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://www.jiecaoshe.com/post-images/FgTe1Bt7o.jpg" alt="2024甲辰龙年春节快乐">
+    
+  </div>
+  
+      </div>
+
+      
+  <div class="my-4 flex justify-between px-4 md:px-0">
+    
+    
+      <a href="https://www.jiecaoshe.com/page/2" class="btn btn-white">
+        下一页
+        <i class="ri-arrow-right-line ml-4"></i>
+      </a>
+    
+  </div>
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Copyright © 2012-2026. Jiecaoshe.com All rights reserved.
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://www.jiecaoshe.com/media/scripts/main.js"></script>
+</body>
+
+</html>
